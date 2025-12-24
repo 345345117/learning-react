@@ -14,6 +14,22 @@
 //         } else if(b<10){
 //             return a+b
 //         }
+
+// import User1 from "./useEffect"
+
+// import { useState } from "react"
+
+// import User from "./Loop2"
+
+// import Dropdown from "./Drop down"
+
+// import Checkbox from "./checkboxes";
+
+// import Controller from "./controller";
+
+
+
+
         
 //         else{
 //             return("This is the number")
@@ -128,4 +144,328 @@
 // }
 // export default Apps
 
+// import { useState } from "react"
+// function Apps(){
+//     let [display,setupdate]=useState(true)
+//     return(
+//         <>
+//         <button onClick={()=>setupdate(!display)}>toggle</button>
+//         {
+//             display?<h1>dip singh</h1>:null
+//         }
+//         </>
+//     )
+// }
+// export default Apps
+// import { useState } from "react";
+// function Apps()
+// {
+//     let [islogin,islogout]=useState(false)
+//     return(
+//         <dev>
+//            <button onClick={()=>islogout(true)}>summit</button>
+//            {
+//             islogin&&<h1>welcome!</h1>
+//            }
 
+           
+           
+            
+
+//         </dev>
+//     )
+
+// }
+// export default Apps
+// import { useState } from "react";
+// function Apps(){
+//     let [setcount,count ]=useState("loading")
+//     let message={
+//         loading:"loading....",
+//         success:"Data loaded sucessfully",
+//         error:"something wrong"
+
+//     }
+//     return(
+//         <div>
+//             <button onClick={()=>count("success")}>success</button>
+//             <button onClick={()=>count("error")}>error</button>
+//             <h1>{message[setcount]}</h1>
+
+//         </div>
+//     )
+// }
+// // export default Apps
+// import Apple from "./component"
+// function Apps(){
+//     let collage={
+//         Name:"bhairahawa multiple",
+//         location:"Siddharthnagar",
+//         ward:12 
+//     }
+//     let school={
+//         Name:"Little star secondary english boarding school",
+//         location:"lahan",
+//         wardNo:"12"
+//     }
+//     const hero=["salaman khan","bobydebal"]
+//     return(
+        
+//         <div>
+//          <Apple user={collage}/>
+//          <Apple user={school}/>
+        
+
+//         </div>
+
+//     )
+// }
+// export default App  
+// import Warap from "./wrapper"
+// function User(){
+//     return(
+//         <div >
+//             <Warap > <h2 style={{color:"blue"}}> Dip singh</h2></Warap>
+//             <Warap>
+//                 <h1>This is react page</h1>
+//             </Warap>
+
+//         </div>
+
+//     )
+// } 
+// export default User
+// import { useState } from "react"
+// function User(){
+//     let [setvalue,setcount]=useState("dip singh")
+
+//     return(
+//         <div>
+//             <h1>This is the React page</h1>
+//             <input type="text" value={setvalue}placeholder="enter the number" onChange={(e)=>setcount(e.target.value)}></input>
+           
+//             <h1>{setvalue}</h1>
+//             <button onClick={()=>setcount("")}>clear</button>
+
+//         </div>
+//     )
+// }
+// export default User
+// function Controller(){
+//     return(
+//         <div>
+//             <h1>form handller</h1>
+            
+//         </div>
+
+//     )
+
+// }
+// export default Controller
+// import Controller from "./controller";
+// function User(){
+//     return(
+//         <div>
+//             <Controller/>
+//         </div>
+//     )
+// }
+// export default User
+// import Checkbox from "./checkboxes";import Dropdown from "./Drop down"
+// import Dropdown from "./Drop down"
+// function User()
+// {
+//     return(
+//         <div>
+//             {/* <Checkbox/> */}
+//             <Dropdown/>
+
+//         </div>
+//     )
+// } export default User
+// function User(){
+//     let userdata =[
+//         {
+//             Name:"Dip ",
+//             age:32,
+//             Roll:202,
+//             study:"TU"
+//         },
+//          {
+//             Name:"Dipesh",
+//             age:43,
+//             Roll:203,
+//             study:"NEB"
+//         }, {
+//             Name:"Nanin ",
+//             age:34,
+//             Roll:201,
+//             study:"ioe"
+//         }, {
+//             Name:"pratik ",
+//             age:18,
+//             Roll:202,
+//             study:"TU"
+//         }
+//     ]
+   
+//     return(
+//         <div>
+//            <table border={1}>
+//             <thead >
+//             <tr>
+//                 <td>Name</td>
+//                 <td>age</td>
+//                 <td>Roll</td>
+//                 <td>Study</td>
+//             </tr>
+//            </thead>
+//           <tbody>
+//             {
+//                 userdata.map((item)=>(<tr>
+//                     {/* <td>{item.id}</td> */}
+//                 <td>{item.Name}</td>
+//                 <td>{item.age}</td>
+//                 <td>{item.Roll}</td>
+//                 <td>{item.study}</td>
+//             </tr>))
+//             }
+               
+//           </tbody>
+//            </table>
+
+//         </div>
+        
+
+//     )
+// }
+// export default User
+// import User from "./Loop2"
+//  function UserData(){
+//     let Apps=[
+//         {
+//             Name:"Rajesh yadav",
+//             Village:"Maheshpur",
+//             WardNo:4
+//         },
+//         {
+//             Name:"Pratik shresta",
+//             village:"dumkibas",
+//             WardNo:5
+//         },
+//         {
+//             Name:"hemant chilwal",
+//             Village:"chitwan",
+//             Wardno:7
+
+//         }
+//     ]
+//     return(
+//         <div>
+//             <h1>component</h1>
+//             {
+//                 Apps.map((item)=>(
+//                     <User data={item}/>
+//                 ))
+//             }
+            
+           
+
+//         </div>
+//     )
+//  }
+// //  export default UserData 
+// import User from "./Loop2"
+
+// function Apps(){
+//     const collage=[
+//         {
+//             name:"kathmandu unversity",
+//             city:"lagankhel",
+//             faculty:"computer engineer",
+//             student:[
+//                { name:"shivam kumar mandal",
+//                 city:"lahan",
+//                 school:"Little star secondary boarding school lanhan",},
+
+//                 { name:"Naresh kumar mandal",
+//                 city:"haripur",
+//                 school:"Applo om secondary boarding school lahan-12"},
+
+//                 { name:"buddha kumar sharma",
+//                 city:"bariyarpati",
+//                 school:"Little star secondary english boarding school"}
+
+//             ]
+//         },
+//         {
+//             name:"pokhera unversity",
+//             city:"pokhera",
+//             faculty:"civil engineer",
+//             // student:[
+//             //    { Name:"Naresh kumar mandal",
+//             //     city:"haripur",
+//             //     school:"Applo om secondary boarding school lahan-12"}
+//             // ]
+//         },
+//         {
+//             name:"Insituate of engineering pulchowk",
+//             city:"pulchowk",
+//             faculty:"civil engineer",
+//         //  student:[
+//         //        { Name:"buddha kumar sharma",
+//         //         city:"bariyarpati",
+//         //         school:"Little star secondary english boarding school"}
+//         //     ]   
+//         }
+//     ]
+//     return(
+//         <div>
+//             {
+//                 collage.map((detail,index)=>(
+//                     <div key={index}>
+//                         <h1></h1>
+//                         <User data={detail}/>
+//                         {/* {
+//                             collage.student.map((item)=>(
+//                                 <h2>{item.Name}</h2>
+//                             ))
+//                         } */}
+
+//                     </div>
+                    
+//                 ))
+                
+//             }
+//         </div>
+//     )
+// }
+// export default Apps
+// import { useEffect, useState } from "react"
+// function User(){
+//     let [setcount,count]=useState(0)
+//     useEffect(()=>{
+//         name()
+//     } ,[count]) 
+//     function name(){
+//         console.log(2+3)
+//     }
+    
+//     return(
+//         <div>
+//            <button onClick={()=>count(setcount+1)}>update</button>
+//            <h1>setcount:{setcount}</h1>
+//         </div>
+
+//     )
+// }
+// export default User
+// import User from "./Loop2"
+function Apps(){
+    return(
+        <div>
+            <h1>hello</h1>
+        </div>
+    )
+}
+export default Apps

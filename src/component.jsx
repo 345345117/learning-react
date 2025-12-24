@@ -15,3 +15,22 @@
 //     )
 // }
 // export default Name
+function Apple({user}){
+
+    return(
+        <div>
+            <h1>{user.Name}</h1>
+            <h2>{user.location}</h2>
+            <h3>{user.ward}</h3>
+            <hr></hr>
+            
+            
+
+            
+        
+
+        </div>
+
+    )
+}
+export default Apple
