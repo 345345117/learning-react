@@ -15,6 +15,8 @@
 //             return a+b
 //         }
 
+import { useState } from "react";
+
 // import User1 from "./useEffect"
 
 // import { useState } from "react"
@@ -27,10 +29,6 @@
 
 // import Controller from "./controller";
 
-
-
-
-        
 //         else{
 //             return("This is the number")
 //         }
@@ -41,15 +39,12 @@
 //         subject:"nepali",
 //         village:"lahan",
 //         gemail:"www.gemail.com"
-        
+
 //     }
 //     let arr1=[1,2,3,34,4,4,5,5,5]
 //     let path="//img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg"
 //    const path1="https://tse2.mm.bing.net/th/id/OIP.zMFqKDHhNFfp6lBVvRXlmAHaGP?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3"
-            
-        
-        
-    
+
 //     return(
 //         <div>
 //             <h1>{name}</h1>
@@ -60,12 +55,9 @@
 //             <input type="text" value="Nature"></input>
 //             <img
 //             src={path}/>
-            
-            
+
 //             <img
 //             src={path1}/>
-            
-            
 
 //         </div>
 //     )
@@ -79,13 +71,12 @@
 //         alert(name)
 
 //     }
-    
+
 //     return(
 //         <div>
 //             <h1>Hwllo</h1>
-           
-//             <button onClick={()=>fruits("apple")}>summit2</button>
 
+//             <button onClick={()=>fruits("apple")}>summit2</button>
 
 //         </div>
 //     )
@@ -106,7 +97,7 @@
 // export default Apps
 // import { useState } from "react"
 // function Apple(){
-    
+
 //     let [fruits,setcount]=useState("apple")
 //     const name=()=>{
 //          setcount="Banana"
@@ -133,12 +124,11 @@
 //     return(
 //         <div>
 //             <Name/>
-        
+
 //             <h1>This is my first page</h1>
 //             <h1>{fruits}</h1>
 //             <button onClick={call}>summit</button>
-            
-            
+
 //         </div>
 //     )
 // }
@@ -167,10 +157,6 @@
 //            {
 //             islogin&&<h1>welcome!</h1>
 //            }
-
-           
-           
-            
 
 //         </dev>
 //     )
@@ -201,7 +187,7 @@
 //     let collage={
 //         Name:"bhairahawa multiple",
 //         location:"Siddharthnagar",
-//         ward:12 
+//         ward:12
 //     }
 //     let school={
 //         Name:"Little star secondary english boarding school",
@@ -210,17 +196,16 @@
 //     }
 //     const hero=["salaman khan","bobydebal"]
 //     return(
-        
+
 //         <div>
 //          <Apple user={collage}/>
 //          <Apple user={school}/>
-        
 
 //         </div>
 
 //     )
 // }
-// export default App  
+// export default App
 // import Warap from "./wrapper"
 // function User(){
 //     return(
@@ -233,7 +218,7 @@
 //         </div>
 
 //     )
-// } 
+// }
 // export default User
 // import { useState } from "react"
 // function User(){
@@ -243,7 +228,7 @@
 //         <div>
 //             <h1>This is the React page</h1>
 //             <input type="text" value={setvalue}placeholder="enter the number" onChange={(e)=>setcount(e.target.value)}></input>
-           
+
 //             <h1>{setvalue}</h1>
 //             <button onClick={()=>setcount("")}>clear</button>
 
@@ -255,7 +240,7 @@
 //     return(
 //         <div>
 //             <h1>form handller</h1>
-            
+
 //         </div>
 
 //     )
@@ -308,7 +293,7 @@
 //             study:"TU"
 //         }
 //     ]
-   
+
 //     return(
 //         <div>
 //            <table border={1}>
@@ -330,12 +315,11 @@
 //                 <td>{item.study}</td>
 //             </tr>))
 //             }
-               
+
 //           </tbody>
 //            </table>
 
 //         </div>
-        
 
 //     )
 // }
@@ -368,13 +352,11 @@
 //                     <User data={item}/>
 //                 ))
 //             }
-            
-           
 
 //         </div>
 //     )
 //  }
-// //  export default UserData 
+// //  export default UserData
 // import User from "./Loop2"
 
 // function Apps(){
@@ -416,7 +398,7 @@
 //         //        { Name:"buddha kumar sharma",
 //         //         city:"bariyarpati",
 //         //         school:"Little star secondary english boarding school"}
-//         //     ]   
+//         //     ]
 //         }
 //     ]
 //     return(
@@ -433,9 +415,9 @@
 //                         } */}
 
 //                     </div>
-                    
+
 //                 ))
-                
+
 //             }
 //         </div>
 //     )
@@ -446,11 +428,11 @@
 //     let [setcount,count]=useState(0)
 //     useEffect(()=>{
 //         name()
-//     } ,[count]) 
+//     } ,[count])
 //     function name(){
 //         console.log(2+3)
 //     }
-    
+
 //     return(
 //         <div>
 //            <button onClick={()=>count(setcount+1)}>update</button>
@@ -461,11 +443,264 @@
 // }
 // export default User
 // import User from "./Loop2"
-function Apps(){
-    return(
+// function Apps(){
+//     let [count,setcount]=useState(0)
+//     let[Data,setdata]=useState(5)
+//     function name(){
+//         console.log("running")
+//     }
+//     name()
+
+//     return(
+//         <div>
+//             <h1>conponent and props checking</h1>
+//             <buttom onClick={()=>setcount(count+1)}> sumit:{count}</buttom>
+//             <button onClick={()=>setfata}
+
+//         </div>
+//     )
+// }
+// export default Apps
+// function User(){
+//     const name= {
+//                 // width: "200px;",
+//                  backgroundColor: "#cccc",
+//                  height: "200px",
+//                  marginLeft:"20px",
+//                  display:"flex",
+//                      flexDirection: "column",
+//                   flexWrap: "nowrap"
+
+//         }
+//     return(
+//         <div style={name}>
+//             <h1 style={{
+//                     fontFamily: "sans-serif;",
+//                     fontSize: "30px;"
+
+//             }}>user profile</h1>
+//             <img src="https://media.istockphoto.com/id/1369629859/photo/a-great-view-up-into-the-trees-direction-sky.jpg?s=1024x1024&w=is&k=20&c=kityXTyRwEAI5SCtAg808VTPMbEsWpSQiLD9ltyhIms=" style={{width:"150px",marginLeft:"4px",border:"4px solid #ccc"}}></img>
+//             <p>Name:shristi kumsri singh</p>
+//             <span>loves with</span>
+//             <div>
+//                  <h1 style={{
+//                     fontFamily: "sans-serif;",
+//                     fontSize: "30px;"
+
+//             }}>user profile</h1>
+//             <img src="https://media.istockphoto.com/id/1369629859/photo/a-great-view-up-into-the-trees-direction-sky.jpg?s=1024x1024&w=is&k=20&c=kityXTyRwEAI5SCtAg808VTPMbEsWpSQiLD9ltyhIms=" style={{width:"260px",marginLeft:"4px",border:"4px solid #ccc"}}></img>
+//             <p>Name:shristi kumsri singh</p>
+//             <span>loves with</span>
+//             <div>
+//                  <h1 style={{
+//                     fontFamily: "sans-serif;",
+//                     fontSize: "30px;"
+
+//             }}>user profile</h1>
+//             <img src="https://media.istockphoto.com/id/1369629859/photo/a-great-view-up-into-the-trees-direction-sky.jpg?s=1024x1024&w=is&k=20&c=kityXTyRwEAI5SCtAg808VTPMbEsWpSQiLD9ltyhIms=" style={{width:"260px",marginLeft:"4px",border:"4px solid #ccc"}}></img>
+//             <p>Name:shristi kumsri singh</p>
+//             <span>loves with</span>
+//             </div>
+
+//             </div>
+//         </div>
+
+//     )
+// }
+// export default User
+function User() {
+  return (
+    <div style={{display:"flex",flexWrap: "wrap"}}>
+      <div
+        style={{
+          boxShadow: "5px 5px 5px 5px #cccc",
+          height: "350px",
+          borderRadius: "10px",
+        }}
+       >
         <div>
-            <h1>hello</h1>
+          <h1>Children</h1>
+          <img
+            src="https://images.unsplash.com/photo-1506958933531-3dfb8a27542f?q=80&w=1075&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            style={{ width: "200px" }}
+          ></img>
         </div>
-    )
+        <div>
+          <span>Name:Dip kumar singh</span>
+          <div>
+               <span>Job:software developer</span>
+          </div>
+        </div>
+      </div>
+      <div
+        style={{
+          boxShadow: "5px 5px 5px 5px #cccc",
+          height: "350px",
+          borderRadius: "10px",
+        }}
+       >
+        <div>
+          <h1>Children</h1>
+          <img
+            src="https://images.unsplash.com/photo-1506958933531-3dfb8a27542f?q=80&w=1075&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            style={{ width: "200px" }}
+          ></img>
+        </div>
+        <div>
+          <span>Name:Dip kumar singh</span>
+          <div>
+               <span>Job:software developer</span>
+          </div>
+        </div>
+      </div>
+      <div
+        style={{
+          boxShadow: "5px 5px 5px 5px #cccc",
+          height: "350px",
+          borderRadius: "10px",
+        }}
+       >
+        <div>
+          <h1>Children</h1>
+          <img
+            src="https://images.unsplash.com/photo-1506958933531-3dfb8a27542f?q=80&w=1075&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            style={{ width: "200px" }}
+          ></img>
+        </div>
+        <div>
+          <span>Name:Dip kumar singh</span>
+          <div>
+               <span>Job:software developer</span>
+          </div>
+        </div>
+      </div>
+      <div
+        style={{
+          boxShadow: "5px 5px 5px 5px #cccc",
+          height: "350px",
+          borderRadius: "10px",
+        }}
+       >
+        <div>
+          <h1>Children</h1>
+          <img
+            src="https://images.unsplash.com/photo-1506958933531-3dfb8a27542f?q=80&w=1075&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            style={{ width: "200px" }}
+          ></img>
+        </div>
+        <div>
+          <span>Name:Dip kumar singh</span>
+          <div>
+               <span>Job:software developer</span>
+          </div>
+        </div>
+      </div>
+      <div
+        style={{
+          boxShadow: "5px 5px 5px 5px #cccc",
+          height: "350px",
+          borderRadius: "10px",
+        }}
+       >
+        <div>
+          <h1>Children</h1>
+          <img
+            src="https://images.unsplash.com/photo-1506958933531-3dfb8a27542f?q=80&w=1075&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            style={{ width: "200px" }}
+          ></img>
+        </div>
+        <div>
+          <span>Name:Dip kumar singh</span>
+          <div>
+               <span>Job:software developer</span>
+          </div>
+        </div>
+      </div>
+      <div
+        style={{
+          boxShadow: "5px 5px 5px 5px #cccc",
+          height: "350px",
+          borderRadius: "10px",
+        }}
+       >
+        <div>
+          <h1>Children</h1>
+          <img
+            src="https://images.unsplash.com/photo-1506958933531-3dfb8a27542f?q=80&w=1075&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            style={{ width: "200px" }}
+          ></img>
+        </div>
+        <div>
+          <span>Name:Dip kumar singh</span>
+          <div>
+               <span>Job:software developer</span>
+          </div>
+        </div>
+      </div>
+      <div
+        style={{
+          boxShadow: "5px 5px 5px 5px #cccc",
+          height: "350px",
+          borderRadius: "10px",
+        }}
+       >
+        <div>
+          <h1>Children</h1>
+          <img
+            src="https://images.unsplash.com/photo-1506958933531-3dfb8a27542f?q=80&w=1075&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            style={{ width: "200px" }}
+          ></img>
+        </div>
+        <div>
+          <span>Name:Dip kumar singh</span>
+          <div>
+               <span>Job:software developer</span>
+          </div>
+        </div>
+      </div>
+      <div
+        style={{
+          boxShadow: "5px 5px 5px 5px #cccc",
+          height: "350px",
+          borderRadius: "10px",
+        }}
+       >
+        <div>
+          <h1>Children</h1>
+          <img
+            src="https://images.unsplash.com/photo-1506958933531-3dfb8a27542f?q=80&w=1075&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            style={{ width: "200px" }}
+          ></img>
+        </div>
+        <div>
+          <span>Name:Dip kumar singh</span>
+          <div>
+               <span>Job:software developer</span>
+          </div>
+        </div>
+      </div>
+      <div
+        style={{
+          boxShadow: "5px 5px 5px 5px #cccc",
+          height: "350px",
+          borderRadius: "10px",
+        }}
+       >
+        <div>
+          <h1>Children</h1>
+          <img
+            src="https://images.unsplash.com/photo-1506958933531-3dfb8a27542f?q=80&w=1075&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            style={{ width: "200px" }}
+          ></img>
+        </div>
+        <div>
+          <span>Name:Dip kumar singh</span>
+          <div>
+               <span>Job:software developer</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
-export default Apps
+export default User;
