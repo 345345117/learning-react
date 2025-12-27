@@ -21,3 +21,31 @@ function User() {
   );
 }
 export default User;
+import styled from "styled-components"
+function Apps(){
+
+
+   let Name=styled.h1`
+   color:red;
+   `
+let Btn=styled.button({
+   color:"#e19898cc",
+   backgroundColor:"darkblue",
+   fontFamily:"sans-serif",
+   fontWeight:"bold"
+
+})
+
+  
+  
+   return(
+      <div>
+         <Name> dipsingh</Name>
+         <Btn>Login</Btn>
+         <Btn>Signup</Btn>
+        
+
+      </div>
+   )
+} export default Apps
+
