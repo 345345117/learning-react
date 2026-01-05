@@ -1,51 +1,62 @@
-import style from "./User.module.css"
-function User() {
-  return (
-    <div style={{display:"flex",flexWrap: "wrap"}}>
-      <div className={style.container} >
-        <div>
-          <h1 className={style.heading}>Children</h1>
-          <img
-            src="https://images.unsplash.com/photo-1506958933531-3dfb8a27542f?q=80&w=1075&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            style={{ width: "200px" }}
-          ></img>
-        </div>
-        <div>
-          <span>Name:Dip kumar singh</span>
-        </div>
-        <div>
-          <span>job:software devloper</span>
-        </div>
-       </div> 
-    </div>
-  );
-}
-export default User;
-import styled from "styled-components"
+// import Child from "./Child"
+// import Baby from "./Sharing"
+// import { useState } from "react"
+
+import { useState } from "react"
+
+
+//  function Apps(){
+//        let [use,setuse]=useState("")
+
+//     return(
+//         <div>
+//             <h1>This is Apps</h1>
+//             <Baby data={setuse}/>
+//             <Child user={use} />
+//         </div>
+
+//     )
+
+//  }
+//  export d{
+//
 function Apps(){
+    let [use,setuse]=useState({
+        name:"dip kumar singh ",
+        RollNo:22,
+        subject:"computer science ",
+        adress:{
 
+            city:"patrari bazzar"
+        }
+    })
+    function handler(val){
+        use.adress.city=val
 
-   let Name=styled.h1`
-   color:red;
-   `
-let Btn=styled.button({
-   color:"#e19898cc",
-   backgroundColor:"darkblue",
-   fontFamily:"sans-serif",
-   fontWeight:"bold"
-
-})
-
-  
-  
-   return(
-      <div>
-         <Name> dipsingh</Name>
-         <Btn>Login</Btn>
-         <Btn>Signup</Btn>
         
+        setuse({...use,adress:{...use.adress,city}})
+        console.log(use)
 
-      </div>
-   )
-} export default Apps
+    
+    
 
+        
+        
+       
+
+    }
+
+    return(
+       <div>
+         <h1>update the object</h1>
+         <input type="text" placeholder="update the user name"
+         onChange={(e)=>handler(e.target.value)}></input>
+         <h2>name:{use.name}</h2>
+         <h3>Rollno:{use.RollNo}</h3>
+         <h4>subject:{use.subject}</h4>
+         <h5>adress:{use.adress.city}</h5>
+       </div>
+    
+    )
+}
+export default Apps
