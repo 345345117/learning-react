@@ -1,10 +1,7 @@
 // import Child from "./Child"
 // import Baby from "./Sharing"
 // import { useState } from "react"
-
-import { useState } from "react"
-
-
+//
 //  function Apps(){
 //        let [use,setuse]=useState("")
 
@@ -19,44 +16,72 @@ import { useState } from "react"
 
 //  }
 //  export d{
-//
-function Apps(){
-    let [use,setuse]=useState({
-        name:"dip kumar singh ",
-        RollNo:22,
-        subject:"computer science ",
-        adress:{
+// setuse(student.filter(name=>name!=="sita"))
 
-            city:"patrari bazzar"
-        }
-    })
-    function handler(val){
-        use.adress.city=val
+// student.map( )
+//  function User(){
+//     let [data,setdata]=useState(["dip","singh","kumar"])
+//     let [user,setuser]=userS
+//     function apps(){
+//         let newdata=[...data];
+//         setdata(newdata.slice(0,newdata.length-1))
+//         console.log(newdata)
 
-        
-        setuse({...use,adress:{...use.adress,city}})
-        console.log(use)
+//     }
 
-    
-    
+//     return(<div>
+//         <h1>This is the arry update</h1>
+//         <input type="text" onChange={(e)=>apps(e.target.value)} placeholder="enter the userName"></input>
 
-        
-        
-       
+//         {
+//             data.map((item,index)=>{
+//                 return <h1 key={index}>{item}</h1>
+//             })
+//         }
 
+//     </div>)
+//  }
+//  export default Us
+import { useActionState } from "react";
+function User() {
+  // let [data,action,pending]=useActionState(handling())
+  let handling = async (prevention, formData) => {
+    let name = formData.get("name");
+    let password = formData.get("password");
+    await new Promise((res) => setTimeout(res, 2000));
+    console.log(name, password);
+    if(name && password){
+        return{message:"message should be sumitted"}
     }
+    else{
+        return{error:"message should be error"}
+    }
+   
+  
 
-    return(
-       <div>
-         <h1>update the object</h1>
-         <input type="text" placeholder="update the user name"
-         onChange={(e)=>handler(e.target.value)}></input>
-         <h2>name:{use.name}</h2>
-         <h3>Rollno:{use.RollNo}</h3>
-         <h4>subject:{use.subject}</h4>
-         <h5>adress:{use.adress.city}</h5>
-       </div>
-    
-    )
+  };
+   
+  
+  let [data, action, pending] = useActionState(handling,undefined);
+ 
+  return (
+    <div>
+      <h1>This is form handling</h1>
+      <form action={action}>
+        <input placeholder="enter userNmae" name="name"></input>
+        <br></br>
+        <input placeholder="password" name="password"></input>
+        <br></br>
+        <button disabled={pending}>summit</button>
+        {
+            data?.error && <span style={{color:"blue"}}>{data?.error}</span>
+        }
+         {
+            data?.message && <span style={{color:"red"}}>{data?.message}</span>
+        }
+      </form>
+
+    </div>
+  );
 }
-export default Apps
+export default User;
