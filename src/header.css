@@ -1,0 +1,38 @@
+.heading{
+    display: flex;
+    justify-content: space-between;
+    background-color: #e2c8e1;
+    width: auto;
+}
+.heading .left{
+    padding-top: 3px;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 5px;
+}
+.heading .left .leftside{
+    text-decoration: none;
+    font-size: 30px;
+}
+.heading .right{
+        display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
+.heading .right .right-side{
+        display: flex;
+    justify-content: space-between;
+    width: 400px;
+    text-decoration: none;
+    padding-right: 10px;
+    text-decoration-style: none;
+    
+
+}
+li a{
+    text-decoration: none; 
+     text-decoration-style: none;
+     font-size: 20px;
+     font-weight: bold;
+
+}

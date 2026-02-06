@@ -1,21 +1,25 @@
-import { BrowserRouter,Routes,Route,Link } from "react-router";
-function Apps(){
-    return(
-        <div>
-            <BrowserRouter>
-            <Link to="/ home ">Home</Link>
-            <Link to="/ contact">Contact</Link>
-            <Link to="/ about">About</Link>
+import { Routes,Route } from "react-router";
+import Home from "./Home";
+import Contact from "./Contact";
+import About from "./About";
+import Blogs from "./Blogs";
+import Login from "./Login";
+import Name from "./Navbar";
 
-            <Routes>
-                <Route path="/ home " element={<h1>Home</h1>}/>
-                <Route path="/ contact" element={<h2>Contact</h2>}/>
-                <Route path ="/ about" element={<h3>About</h3>}/>
+function User() {
+  return (
+    <div>
+        <Name/>
 
-            </Routes>
-            </BrowserRouter>
-
-        </div>
-    )
+   
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/blog" element={<Blogs />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
+    </div>
+  );
 }
-export default Apps
+export default User;
